@@ -18,11 +18,24 @@ tsc // compile
 
 /* package.json */
   "scripts": {
-      "start": "node index.js",
-      "prestart": "tsc"
+    "start": "node index.js",
+    "prestart": "tsc"
   }
   
 >> yarn start
+
+/* package.json */
+yarn add tsc-watch --dev
+  "scripts": {
+    "start": "tsc-watch --onSuccess \" node dist/index.js \" "
+  }
+/* tsconfig.json */
+    "complierOptions": {
+        ...,
+        "outDir": "dist"
+    }
+    "include": ["src/**/*"],
+
 </code>
 
 
