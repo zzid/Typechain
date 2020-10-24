@@ -1,0 +1,16 @@
+{
+  "name": "Typechain",
+  "version": "1.0.0",
+  "description": "Simple Blockchain with Typescript",
+  "main": "index.js",
+  "repository": "https://github.com/zzid/Typechain.git",
+  "author": "(DongYun Hwang <931010dy@gmail.com>)",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  },
+  "devDependencies": {
+    "tsc-watch": "^4.2.9"
+  }
+}
